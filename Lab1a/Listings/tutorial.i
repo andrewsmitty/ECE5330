@@ -1,9 +1,11 @@
-# 1 "Src\\Driver\\DrvGPIO.c"
+# 1 "tutorial.c"
+
+
+
+
+
  
- 
- 
- 
- 
+	
 # 1 "C:\\Keil_v5\\ARM\\ARMCC\\Bin\\..\\include\\stdio.h"
  
  
@@ -903,8 +905,8 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
  
 
-# 7 "Src\\Driver\\DrvGPIO.c"
-# 1 "./NUC1xx/NUC1xx.h"
+# 9 "tutorial.c"
+# 1 "../NUC1xx/NUC1xx.h"
  
  
  
@@ -978,7 +980,7 @@ typedef enum IRQn
 
 
 
-# 1 "./CoreSupport/core_cm0.h"
+# 1 "../CoreSupport/core_cm0.h"
  
 
 
@@ -1289,7 +1291,7 @@ typedef unsigned     long long uintmax_t;
 
 
  
-# 56 "./CoreSupport/core_cm0.h"
+# 56 "../CoreSupport/core_cm0.h"
 
 
 
@@ -1309,7 +1311,7 @@ typedef unsigned     long long uintmax_t;
 
  
 
-# 82 "./CoreSupport/core_cm0.h"
+# 82 "../CoreSupport/core_cm0.h"
 
 
 
@@ -1592,7 +1594,7 @@ typedef struct
 
 
 
-# 377 "./CoreSupport/core_cm0.h"
+# 377 "../CoreSupport/core_cm0.h"
 
 
  
@@ -1603,7 +1605,7 @@ typedef struct
 
 
 
-# 395 "./CoreSupport/core_cm0.h"
+# 395 "../CoreSupport/core_cm0.h"
 
 
  
@@ -1670,7 +1672,7 @@ extern uint32_t __REV16(uint16_t value);
 extern int32_t __REVSH(int16_t value);
 
 
-# 500 "./CoreSupport/core_cm0.h"
+# 500 "../CoreSupport/core_cm0.h"
 
 
 
@@ -1729,7 +1731,7 @@ static __inline void __set_CONTROL(uint32_t control)
 
 
 
-# 770 "./CoreSupport/core_cm0.h"
+# 770 "../CoreSupport/core_cm0.h"
 
 
 
@@ -1921,8 +1923,8 @@ static __inline void NVIC_SystemReset(void)
 
 
  
-# 75 "./NUC1xx/NUC1xx.h"
-# 1 "./NUC1xx/system_NUC1xx.h"
+# 75 "../NUC1xx/NUC1xx.h"
+# 1 "../NUC1xx/system_NUC1xx.h"
  
  
  
@@ -1982,8 +1984,8 @@ extern void SystemCoreClockUpdate (void);
 
 
 
-# 76 "./NUC1xx/NUC1xx.h"
-# 1 "./Include/System\\SysInfra.h"
+# 76 "../NUC1xx/NUC1xx.h"
+# 1 "../Include/System\\SysInfra.h"
  
  
  
@@ -1997,7 +1999,7 @@ extern void SystemCoreClockUpdate (void);
  
  
  
-# 1 "./Include/System\\ModuleID.h"
+# 1 "../Include/System\\ModuleID.h"
  
  
  
@@ -2169,9 +2171,9 @@ typedef enum
 } E_SYSINFRA_MODULE_ID;
 
 
-# 15 "./Include/System\\SysInfra.h"
-# 16 "./Include/System\\SysInfra.h"
-# 17 "./Include/System\\SysInfra.h"
+# 15 "../Include/System\\SysInfra.h"
+# 16 "../Include/System\\SysInfra.h"
+# 17 "../Include/System\\SysInfra.h"
 
 
 
@@ -2231,7 +2233,7 @@ typedef enum
 
 
 
-# 77 "./NUC1xx/NUC1xx.h"
+# 77 "../NUC1xx/NUC1xx.h"
 
 
 #pragma anon_unions
@@ -8778,7 +8780,7 @@ typedef struct
  
 
 
-# 6629 "./NUC1xx/NUC1xx.h"
+# 6629 "../NUC1xx/NUC1xx.h"
 
 
 
@@ -8822,7 +8824,7 @@ typedef struct
 
 
 
-# 6685 "./NUC1xx/NUC1xx.h"
+# 6685 "../NUC1xx/NUC1xx.h"
 
 
 
@@ -8834,7 +8836,7 @@ typedef struct
  
  
  
-# 6703 "./NUC1xx/NUC1xx.h"
+# 6703 "../NUC1xx/NUC1xx.h"
 
 
 
@@ -8877,7 +8879,7 @@ typedef struct
 
 
 
-# 6756 "./NUC1xx/NUC1xx.h"
+# 6756 "../NUC1xx/NUC1xx.h"
 
 
 
@@ -8898,9 +8900,9 @@ typedef volatile unsigned short vu16;
 
 
 
-# 6782 "./NUC1xx/NUC1xx.h"
+# 6782 "../NUC1xx/NUC1xx.h"
 
-# 6789 "./NUC1xx/NUC1xx.h"
+# 6789 "../NUC1xx/NUC1xx.h"
 
 
 
@@ -8915,12 +8917,12 @@ typedef volatile unsigned short vu16;
 
 
  
-# 6835 "./NUC1xx/NUC1xx.h"
+# 6835 "../NUC1xx/NUC1xx.h"
 
 
                                                                                                  
-# 8 "Src\\Driver\\DrvGPIO.c"
-# 1 "./Include/Driver/DrvGPIO.h"
+# 10 "tutorial.c"
+# 1 "../Include/Driver/DrvSYS.h"
  
  
  
@@ -8929,7 +8931,237 @@ typedef volatile unsigned short vu16;
 
 
 
-# 10 "./Include/Driver/DrvGPIO.h"
+# 10 "../Include/Driver/DrvSYS.h"
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 35 "../Include/Driver/DrvSYS.h"
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_EXTERNAL_12M = 0,
+    E_SYS_INTERNAL_22M = 1, 
+}E_SYS_PLL_CLKSRC;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_GPIO_RST  = 1,
+    E_SYS_TMR0_RST  = 2,
+    E_SYS_TMR1_RST  = 3,
+    E_SYS_TMR2_RST  = 4,
+    E_SYS_TMR3_RST  = 5,
+    E_SYS_I2C0_RST  = 8,
+    E_SYS_I2C1_RST  = 9,
+    E_SYS_SPI0_RST  = 12,
+    E_SYS_SPI1_RST  = 13,
+    E_SYS_SPI2_RST  = 14,
+    E_SYS_SPI3_RST  = 15,
+    E_SYS_UART0_RST = 16,
+    E_SYS_UART1_RST = 17,
+    E_SYS_UART2_RST = 18,
+    E_SYS_PWM03_RST = 20,
+    E_SYS_PWM47_RST = 21,
+    E_SYS_ACMP_RST  = 22,
+    E_SYS_PS2_RST   = 23,
+    E_SYS_CAN0_RST  = 24,
+    E_SYS_USBD_RST  = 27,
+    E_SYS_ADC_RST   = 28,
+    E_SYS_I2S_RST   = 29,
+    E_SYS_PDMA_RST  = 32,
+    E_SYS_EBI_RST   = 33
+}E_SYS_IP_RST;
+
+ 
+ 
+ 
+
+typedef enum 
+{
+    E_SYS_WDT_CLK   = 0,
+    E_SYS_RTC_CLK   = 1,
+    E_SYS_TMR0_CLK  = 2,
+    E_SYS_TMR1_CLK  = 3,
+    E_SYS_TMR2_CLK  = 4,
+    E_SYS_TMR3_CLK  = 5,
+    E_SYS_FDIV_CLK  = 6,
+    E_SYS_I2C0_CLK  = 8,
+    E_SYS_I2C1_CLK  = 9,
+    E_SYS_SPI0_CLK  = 12,
+    E_SYS_SPI1_CLK  = 13,
+    E_SYS_SPI2_CLK  = 14,
+    E_SYS_SPI3_CLK  = 15,
+    E_SYS_UART0_CLK = 16,
+    E_SYS_UART1_CLK = 17,
+    E_SYS_UART2_CLK = 18,
+    E_SYS_PWM01_CLK = 20,
+    E_SYS_PWM23_CLK = 21,
+    E_SYS_PWM45_CLK = 22,
+    E_SYS_PWM67_CLK = 23,
+    E_SYS_CAN0_CLK  = 24,
+    E_SYS_USBD_CLK  = 27,
+    E_SYS_ADC_CLK   = 28,
+    E_SYS_I2S_CLK   = 29,
+    E_SYS_ACMP_CLK  = 30,
+    E_SYS_PS2_CLK   = 31,
+    E_SYS_PDMA_CLK  = 33,
+    E_SYS_ISP_CLK   = 34,
+    E_SYS_EBI_CLK   = 35
+}E_SYS_IP_CLK;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_ADC_DIV,
+    E_SYS_UART_DIV,
+    E_SYS_USB_DIV,
+    E_SYS_HCLK_DIV
+
+}E_SYS_IP_DIV;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_WDT_CLKSRC,
+    E_SYS_ADC_CLKSRC,
+    E_SYS_TMR0_CLKSRC,
+    E_SYS_TMR1_CLKSRC,
+    E_SYS_TMR2_CLKSRC,
+    E_SYS_TMR3_CLKSRC,
+    E_SYS_UART_CLKSRC,
+    E_SYS_PWM01_CLKSRC,
+    E_SYS_PWM23_CLKSRC,
+    E_SYS_I2S_CLKSRC,
+    E_SYS_FRQDIV_CLKSRC,
+    E_SYS_PWM45_CLKSRC,
+    E_SYS_PWM67_CLKSRC
+
+}E_SYS_IP_CLKSRC;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_XTL12M,
+    E_SYS_XTL32K,
+    E_SYS_OSC22M,
+    E_SYS_OSC10K,
+    E_SYS_PLL,
+}E_SYS_CHIP_CLKSRC;
+
+
+ 
+ 
+ 
+typedef enum 
+{
+    E_SYS_IMMEDIATE, 
+    E_SYS_WAIT_FOR_CPU
+}E_SYS_PD_TYPE;
+
+
+typedef void (*BOD_CALLBACK)(void);
+typedef void (*PWRWU_CALLBACK)(void);
+
+ 
+ 
+ 
+void     DrvSYS_ClearClockSwitchStatus(void);
+uint32_t DrvSYS_ClearResetSource(uint32_t u32Src);
+
+void     DrvSYS_Delay(uint32_t us);
+void     DrvSYS_DisableBODLowPowerMode(void);
+void     DrvSYS_DisableHighPerformanceMode(void);
+void     DrvSYS_DisableLowVoltReset(void);
+void     DrvSYS_DisablePOR(void);
+void     DrvSYS_DisableTemperatureSensor(void);
+
+void     DrvSYS_EnableBODLowPowerMode(void);
+void     DrvSYS_EnableHighPerformanceMode(void);
+void     DrvSYS_EnableLowVoltReset(void);
+void     DrvSYS_EnablePOR(void);
+void     DrvSYS_EnableTemperatureSensor(void);
+void     DrvSYS_EnterPowerDown(E_SYS_PD_TYPE ePDType);
+
+uint32_t DrvSYS_GetBODState(void);
+int32_t  DrvSYS_GetChipClockSourceStatus(E_SYS_CHIP_CLKSRC eClkSrc);
+uint32_t DrvSYS_GetClockSwitchStatus(void);
+uint32_t DrvSYS_GetExtClockFreq(void);
+uint32_t DrvSYS_GetHCLKFreq(void);
+uint32_t DrvSYS_GetPLLClockFreq(void);
+uint32_t DrvSYS_GetPLLContent(E_SYS_PLL_CLKSRC ePllSrc, uint32_t u32PllClk);
+uint32_t DrvSYS_GetResetSource(void);
+uint32_t DrvSYS_GetVersion(void);
+
+int32_t  DrvSYS_IsProtectedRegLocked(void);
+
+int32_t  DrvSYS_LockProtectedReg(void);
+
+int32_t  DrvSYS_Open(uint32_t u32Hclk);
+
+uint32_t DrvSYS_ReadProductID(void);
+void     DrvSYS_ResetChip(void);
+void     DrvSYS_ResetCPU(void);
+void     DrvSYS_ResetIP(E_SYS_IP_RST eIpRst);
+
+void     DrvSYS_SelectBODVolt(uint8_t u8Volt);
+int32_t  DrvSYS_SelectHCLKSource(uint8_t u8ClkSrcSel);
+int32_t  DrvSYS_SelectIPClockSource(E_SYS_IP_CLKSRC eIpClkSrc, uint8_t u8ClkSrcSel);
+void     DrvSYS_SelectPLLSource(E_SYS_PLL_CLKSRC ePllSrc);
+int32_t  DrvSYS_SelectSysTickSource(uint8_t u8ClkSrcSel);
+void     DrvSYS_SetBODFunction(int32_t i32Enable, int32_t i32Mode, BOD_CALLBACK bodcallbackFn);
+int32_t  DrvSYS_SetClockDivider(E_SYS_IP_DIV eIpDiv , int32_t i32value);
+int32_t  DrvSYS_SetFreqDividerOutput(int32_t i32Flag, uint8_t u8Divider);
+void     DrvSYS_SetIPClock(E_SYS_IP_CLK eIpClk, int32_t i32Enable);
+int32_t  DrvSYS_SetOscCtrl(E_SYS_CHIP_CLKSRC eClkSrc, int32_t i32Enable);
+void     DrvSYS_SetPLLContent(uint32_t u32PllContent);
+void     DrvSYS_SetPLLMode(int32_t i32Flag);
+void     DrvSYS_SetPowerDownWakeUpInt(int32_t i32Enable, PWRWU_CALLBACK pdwucallbackFn, int32_t i32enWUDelay);
+
+int32_t  DrvSYS_UnlockProtectedReg(void);
+
+
+
+# 11 "tutorial.c"
+# 1 "../Include/Driver/DrvGPIO.h"
+ 
+ 
+ 
+ 
+ 
+
+
+
+# 10 "../Include/Driver/DrvGPIO.h"
 
  
  
@@ -8956,7 +9188,7 @@ typedef void (*GPIO_EINT0_CALLBACK)(void);
 typedef void (*GPIO_EINT1_CALLBACK)(void);
 
  
-# 117 "./Include/Driver/DrvGPIO.h"
+# 117 "../Include/Driver/DrvGPIO.h"
 
 typedef enum 
 {
@@ -9057,1468 +9289,35 @@ int32_t DrvGPIO_GetVersion(void);
 
 
 
-# 9 "Src\\Driver\\DrvGPIO.c"
-
- 
- 
- 
-
- 
- 
- 
-
-
- 
- 
- 
-static void (*_pfGPABCallback)(uint32_t u32GPAStatus, uint32_t u32GPBStatus);
-static void (*_pfGPCDECallback)(uint32_t u32GPCStatus, uint32_t u32GPDStatus, uint32_t u32GPEStatus);
-static void (*_pfEINT0Callback)(void);
-static void (*_pfEINT1Callback)(void);              		 
-
- 
- 
- 
-void GPAB_IRQHandler(void)
-{
-	volatile uint32_t u32GPAStatus, u32GPBStatus;
+# 12 "tutorial.c"
+int main (void) {
 	
-     
-	u32GPAStatus = ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->ISRC;
-	u32GPBStatus = ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0040))->ISRC;
-
-     
-    u32GPBStatus = u32GPBStatus & ~(0x3 << 14);
-
-     
-    ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->ISRC = u32GPAStatus;
-    ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0040))->ISRC = u32GPBStatus;
-
-     
-    if ( _pfGPABCallback )
-        _pfGPABCallback(u32GPAStatus, u32GPBStatus);    
-}
-
- 
- 
- 
-void GPCDE_IRQHandler(void)
-{
-	volatile uint32_t u32GPCStatus, u32GPDStatus, u32GPEStatus;
+	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x59;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x16;*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x88;
 	
-     
-	u32GPCStatus = ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0080))->ISRC;
-	u32GPDStatus = ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x00C0))->ISRC;
-	u32GPEStatus = ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0100))->ISRC;
-
-     
-    ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0080))->ISRC = u32GPCStatus;
-    ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x00C0))->ISRC = u32GPDStatus;
-    ((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0100))->ISRC = u32GPEStatus;
-
-     
-    if ( _pfGPCDECallback )
-        _pfGPCDECallback(u32GPCStatus, u32GPDStatus, u32GPEStatus);    
-}
-
- 
- 
- 
-void EINT0_IRQHandler(void)
-{
-     
-  	((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0040))->ISRC  = 1UL << 14;
-	if ( _pfEINT0Callback )
-        _pfEINT0Callback();
-}
-
- 
- 
- 
-void EINT1_IRQHandler(void)
-{
-     
-  	((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0040))->ISRC  = 1UL << 15;
-	if ( _pfEINT1Callback )
-        _pfEINT1Callback();
-}
-
-
-
-
-
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_Open(E_DRVGPIO_PORT port, int32_t i32Bit, E_DRVGPIO_IO mode)
-{
-    volatile uint32_t u32Reg;
-    
-    if ((i32Bit < 0) || (i32Bit > 16))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }    
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->PMD + (port*0x40);    
-    if ((mode == E_IO_INPUT) || (mode == E_IO_OUTPUT) || (mode == E_IO_OPENDRAIN))
-    {
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(0x3<<(i32Bit*2));
-        if (mode == E_IO_OUTPUT)
-        {
-            *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (0x1<<(i32Bit*2));
-        }else
-        if (mode == E_IO_OPENDRAIN) 
-        {
-            *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (0x2<<(i32Bit*2));
-        }
-    }else
-	if (mode == E_IO_QUASI)
-    {
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (0x3<<(i32Bit*2));
-    }else
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-        
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_Close(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    if ((i32Bit < 0) || (i32Bit > 16))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-    
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->PMD + (port*0x40);    
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (0x3<<(i32Bit*2));
+	DrvSYS_SetOscCtrl(E_SYS_OSC22M,1);
 	
-	((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.ICLK_ON = 0; 
-
-    return 0;
-}	
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_SetBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-	GPIO_T * tGPIO;
-
-    if ((i32Bit < 0) || (i32Bit > 16))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-
-	tGPIO = (GPIO_T *)((uint32_t)((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) )) + (port*0x40));  
-
-	tGPIO->DOUT |= (1 << i32Bit);
-
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-        
-    if ((i32Bit < 0) || (i32Bit > 16))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->PIN + (port*0x40);    
-
-    return (((*((volatile unsigned int *)(u32Reg)))>>i32Bit) & 0x1);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_ClrBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-	GPIO_T * tGPIO;
-
-    if ((i32Bit < 0) || (i32Bit > 16))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-
-	tGPIO = (GPIO_T *)((uint32_t)((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) )) + (port*0x40));  
-
-	tGPIO->DOUT &= ~(1 << i32Bit);
-
-	return 0;    
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_SetPortBits(E_DRVGPIO_PORT port,int32_t i32Data)
-{
-    GPIO_T * tGPIO;
-
-	tGPIO = (GPIO_T *)((uint32_t)((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) )) + (port*0x40));  
-
-	tGPIO->DOUT = i32Data;
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetPortBits(E_DRVGPIO_PORT port)
-{
-	GPIO_T * tGPIO;
-
-	tGPIO = (GPIO_T *)((uint32_t)((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) )) + (port*0x40));  
-
-    return tGPIO->PIN;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetDoutBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{    
-    if ((i32Bit < 0) || (i32Bit >= 15))
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
- 
-    return (((*((volatile unsigned int *)((uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DOUT + (port*0x40))))>>i32Bit) & 0x1);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetPortDoutBits(E_DRVGPIO_PORT port)
-{
-    if (port > 4)
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-
-    return (*((volatile unsigned int *)((uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DOUT + (port*0x40))));
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_SetBitMask(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port*0x40);    
-
-	*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<i32Bit);
-
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetBitMask(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port*0x40);    
-
-    return (((*((volatile unsigned int *)(u32Reg)))>>i32Bit) & 0x1);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_ClrBitMask(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port*0x40);    
-
-	*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1<<i32Bit);
+	while(DrvSYS_GetChipClockSourceStatus(E_SYS_OSC22M) != 1);
 	
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_SetPortMask(E_DRVGPIO_PORT port, int32_t i32MaskData)
-{
-    *((volatile unsigned int *)((uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port*0x40)))=DrvGPIO_GetPortMask(port) | i32MaskData;
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetPortMask(E_DRVGPIO_PORT port)
-{
-	return (*((volatile unsigned int *)((uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port* 0x40)))); 
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_ClrPortMask(E_DRVGPIO_PORT port, int32_t i32MaskData)
-{
-	*((volatile unsigned int *)((uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DMASK + (port*0x40)))=DrvGPIO_GetPortMask(port) & ~(i32MaskData);
+	DrvSYS_SelectHCLKSource(7);
 	
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_EnableDigitalInputBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->OFFD + (port*0x40);
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1 << (i32Bit+16));
-
-    return 0;
-}
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_DisableDigitalInputBit(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->OFFD + (port*0x40);
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1 << (i32Bit+16));
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_EnableDebounce(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DBEN + (port*0x40);    
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<i32Bit);
-
-	((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.ICLK_ON = 1;
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_DisableDebounce(E_DRVGPIO_PORT port, int32_t i32Bit)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->DBEN + (port*0x40);
-        
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1<<i32Bit);
-    
-    ((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.ICLK_ON = 0;
-
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
-                  
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_SetDebounceTime(uint32_t u32CycleSelection, E_DRVGPIO_DBCLKSRC ClockSource)
-{
-     
-    if (u32CycleSelection > 15)
-    {
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    }
-    
-	((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.DBCLKSEL = u32CycleSelection ; 
-
-	((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.DBCLKSRC = ClockSource ; 
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetDebounceSampleCycle(void)
-{   
-    return ((GPIO_DBNCECON_T *) (((( uint32_t)0x50000000) + 0x4000) + 0x0180))->DBNCECON.DBCLKSEL;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_EnableInt(E_DRVGPIO_PORT port, int32_t i32Bit, E_DRVGPIO_INT_TYPE TriggerType, E_DRVGPIO_INT_MODE Mode)
-{
-    volatile uint32_t u32Reg;
-
-    if ((TriggerType == E_IO_BOTH_EDGE) && (Mode == E_MODE_LEVEL))
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-
-    if ((port == E_GPB) && ((i32Bit == 14) || (i32Bit == 15)))
-    {
-         
-        return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));    
-    }
-    
-     
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (port*0x40);
-	if (TriggerType == E_IO_RISING)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<(i32Bit+16));	 
-	else if(TriggerType == E_IO_FALLING)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<i32Bit);	 
-	else if(TriggerType == E_IO_BOTH_EDGE)  
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<i32Bit)| (1<<(i32Bit+16));	 
-	else
-		return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-
-     
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IMD + (port*0x40);
-	if(Mode == E_MODE_EDGE)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1<<i32Bit);
-	else if(Mode ==E_MODE_LEVEL)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<i32Bit);
-	else
-		return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-    
-     
-    if ((port == E_GPA) || (port == E_GPB))
-    {
-        NVIC_SetPriority(GPAB_IRQn, (1<<2) - 2);
-        NVIC_EnableIRQ(GPAB_IRQn);
-    }
-
-    if ((port == E_GPC) || (port == E_GPD) || (port == E_GPE))
-    {
-        NVIC_SetPriority(GPCDE_IRQn, (1<<2) - 2);
-        NVIC_EnableIRQ(GPCDE_IRQn);
-    }    
-
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_DisableInt(E_DRVGPIO_PORT port, int32_t i32Bit)
-{                                             
-    volatile uint32_t u32Reg;
-
-     
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (port*0x40);
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~((1<<i32Bit) | (1<<(i32Bit+16)));	 
-
-     
-    if ((port == E_GPA) || (port == E_GPB))
-    {
-        NVIC_DisableIRQ(GPAB_IRQn);
-    }
-
-    if ((port == E_GPC) || (port == E_GPD) || (port == E_GPE))
-    {
-        NVIC_DisableIRQ(GPCDE_IRQn);
-    }  
-      
-    return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
-void DrvGPIO_SetIntCallback(GPIO_GPAB_CALLBACK pfGPABCallback, GPIO_GPCDE_CALLBACK pfGPCDECallback)
-{
-    _pfGPABCallback  = (void (*)(uint32_t, uint32_t))pfGPABCallback;
-    _pfGPCDECallback = (void (*)(uint32_t, uint32_t, uint32_t))pfGPCDECallback;    
-}
-
- 
- 
- 
- 	
- 
- 
- 
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-void DrvGPIO_EnableEINT0(E_DRVGPIO_INT_TYPE TriggerType, E_DRVGPIO_INT_MODE Mode, GPIO_EINT0_CALLBACK pfEINT0Callback)
-{
-    volatile uint32_t u32Reg;
-
-    if ((TriggerType == E_IO_BOTH_EDGE) && (Mode == E_MODE_LEVEL))
-        return ;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (E_GPB*0x40);
-	if (TriggerType == E_IO_RISING)
-    {
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(14+16));	 
+	*((volatile uint32_t *)(((( uint32_t)0x50000000) + 0x00000) + 0x100)) = 0x00;;
+	
+	
+	DrvSYS_SetClockDivider(E_SYS_HCLK_DIV,2); 
+	while(1){
+		 
+		 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*15)))) = 1; 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*12)))) = 0; 
+		DrvSYS_Delay(10000000); 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*12)))) = 1; 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*13)))) = 0; 
+		DrvSYS_Delay(10000000);
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*13)))) = 1; 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*14)))) = 0; 
+		DrvSYS_Delay(10000000);
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*14)))) = 1; 
+		(*((volatile uint32_t *) (((((( uint32_t)0x50000000) + 0x4000) + 0x200)+(0x40*2)) + (0x4*15)))) = 0; 
+		DrvSYS_Delay(10000000);
 	}
-    else if (TriggerType == E_IO_FALLING)
-	{
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(14));	 
-	}
-    else if (TriggerType == E_IO_BOTH_EDGE)
-    {  
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(14))|(1UL<<(14+16));	 
-	}    	 
-
-      
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IMD + (E_GPB*0x40);
-	if (Mode == E_MODE_EDGE)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1<<14);
-	else if(Mode == E_MODE_LEVEL)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<14);
-
-   _pfEINT0Callback = pfEINT0Callback;
-
-    NVIC_SetPriority(EINT0_IRQn, (1<<2) - 2);
-    NVIC_EnableIRQ(EINT0_IRQn);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
-void DrvGPIO_DisableEINT0(void)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (E_GPB*0x40);
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~((1UL<<(14))|(1UL<<(14+16)));	 
-
-    NVIC_DisableIRQ(EINT0_IRQn);
-}
-
- 
- 
- 
- 	
- 
- 
- 
-  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-void DrvGPIO_EnableEINT1(E_DRVGPIO_INT_TYPE TriggerType, E_DRVGPIO_INT_MODE Mode, GPIO_EINT1_CALLBACK pfEINT1Callback)
-{
-    volatile uint32_t u32Reg;
-
-    if ((TriggerType == E_IO_BOTH_EDGE) && (Mode == E_MODE_LEVEL))
-        return ;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (E_GPB*0x40);
-	if (TriggerType == E_IO_RISING)
-    {
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(15+16));	 
-	}
-    else if (TriggerType == E_IO_FALLING)
-	{
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(15));	 
-	}
-    else if (TriggerType == E_IO_BOTH_EDGE)
-    {  
-        *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1UL<<(15))|(1UL<<(15+16));	 
-	}    	 
-
-      
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IMD + (E_GPB*0x40);
-	if (Mode == E_MODE_EDGE)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~(1<<15);
-	else if(Mode == E_MODE_LEVEL)
-		*((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) | (1<<15);
-
-    _pfEINT1Callback = pfEINT1Callback;
-
-    NVIC_SetPriority(EINT1_IRQn, (1<<2) - 2);
-    NVIC_EnableIRQ(EINT1_IRQn);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
-void DrvGPIO_DisableEINT1(void)
-{
-    volatile uint32_t u32Reg;
-
-    u32Reg = (uint32_t)&((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) ))->IEN + (E_GPB*0x40);
-
-    *((volatile unsigned int *)(u32Reg))=(*((volatile unsigned int *)(u32Reg))) & ~((1UL<<(15))|(1UL<<(15+16)));	 
-
-    NVIC_DisableIRQ(EINT1_IRQn);
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
-  
- 
- 
-int32_t DrvGPIO_GetIntStatus(E_DRVGPIO_PORT port)
-{
-	GPIO_T * tGPIO;
-
-	tGPIO = (GPIO_T *)((uint32_t)((GPIO_T *) (((( uint32_t)0x50000000) + 0x4000) )) + (port*0x40));  
-
-	return tGPIO->ISRC;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_InitFunction(E_DRVGPIO_FUNC function)
-{  
-    uint8_t u8Offset;
-
-    switch ( function )
-	{
-		 
-		 
-		 
-		case E_FUNC_GPIO:
-		{
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=0;
-			*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=0;
-			*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=0;
-			*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=0;
-			*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=0;		  	
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_CLKO:
-		{
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<12);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<10);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_I2C0:
-		{
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<8);
-		}break;		
-
-		 
-		 
-		 
-		case E_FUNC_I2C1:
-		{
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<10);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_I2S:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0xF<<0);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x1<<15);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1F<<5);			
-		}break;
-		
-		 
-		 
-		 
-		case E_FUNC_CAN0:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x3<<6);
-		}break;	
-
-		 
-		 
-		 
-		case E_FUNC_ACMP0:	
-		case E_FUNC_ACMP1:
-		{
-            if (function == E_FUNC_ACMP0)
-                u8Offset = 6;
-            else
-                u8Offset = 14;
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0x3<<u8Offset);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_SPI0:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0xF<<0);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0xF<<5);
-
-		}break;
-
-		case E_FUNC_SPI0_SS1:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<10);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<0);
-		}break;
-
-		case E_FUNC_SPI0_2BIT_MODE:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0x3<<4);
-		}break;
-
-		case E_FUNC_SPI1:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0xF<<8);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		case E_FUNC_SPI1_SS1:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<9);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<1);
-		}break;
-
-		case E_FUNC_SPI1_2BIT_MODE:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0x3<<12);
-		}break;
-
-		case E_FUNC_SPI2:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0xF<<0);
-		}break;				
-
-		case E_FUNC_SPI2_SS1:	
-		{
-           	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x1<<7);
-            *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<2);
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		case E_FUNC_SPI2_2BIT_MODE:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x3<<4);
-		}break;
-
-		case E_FUNC_SPI3:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0xF<<8);
- 		}break;
-
-		case E_FUNC_SPI3_SS1:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<14);
-            *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<3);
-		}break;
-
-		case E_FUNC_SPI3_2BIT_MODE:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x3<<12);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_SPI0_QFN36PIN:	
-		{           		
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0xF<<0);
- 		}break;
-
-		case E_FUNC_SPI0_SS1_QFN36PIN:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x1<<1);
-		}break;
-
-		case E_FUNC_SPI0_2BIT_MODE_QFN36PIN:	
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x1<<2);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_ADC7:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<2);
-        }
-		case E_FUNC_ADC1:
-		case E_FUNC_ADC2:
-		case E_FUNC_ADC3:
-		case E_FUNC_ADC4:
-		case E_FUNC_ADC5:
-		case E_FUNC_ADC6:
-        {
-		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-        }
-		case E_FUNC_ADC0:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x1<<(function-E_FUNC_ADC0));
-        }break;
-
-  		 
-		 
-		 		
-	  	case E_FUNC_EXTINT0:
-        {
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<3);
-        }
-	  	case E_FUNC_EXTINT1:
-		{	
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<(14+(function-E_FUNC_EXTINT0)));
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_TMR0:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<8);
-		}break;
-	
-		case E_FUNC_TMR1:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<9);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<1);
-		}break;
-
-		case E_FUNC_TMR2:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<10);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<0);
-		}break;
-
-		case E_FUNC_TMR3:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<11);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<4);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_T0EX:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<15);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<24);
-		}break;
-	
-		case E_FUNC_T1EX:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x1<<5);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<25);
-		}break;
-
-		case E_FUNC_T2EX:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<2);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<26);
-		}break;
-
-		case E_FUNC_T3EX:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<3);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<27);
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_UART0:
-		case E_FUNC_UART0_RX_TX:
-		case E_FUNC_UART0_RTS_CTS:
-		case E_FUNC_UART1:
-		case E_FUNC_UART1_RX_TX:
-		case E_FUNC_UART1_RTS_CTS:
-		{
-            if ((function >= E_FUNC_UART0) && (function <= E_FUNC_UART0_RTS_CTS))
-                u8Offset = 0;
-            else
-                u8Offset = 4;                                 
-            if ((function == E_FUNC_UART0) || (function == E_FUNC_UART1))
-          	{
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0xF<<(0+u8Offset));
-		  	    *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-            }else
-            if ((function == E_FUNC_UART0_RX_TX) || (function == E_FUNC_UART1_RX_TX))
-            {
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x3<<(0+u8Offset));
-            }else
-            if ((function == E_FUNC_UART0_RTS_CTS) || (function == E_FUNC_UART1_RTS_CTS))
-            {
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x3<<(2+u8Offset));
-		  	    *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-            }
-		}break;
-
-		case E_FUNC_UART2:
-		{
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPDMFP))) | (0x3<<14);
-        }break;
-
-		 
-		 
-		 
-		case E_FUNC_PWM0:
-		case E_FUNC_PWM1:
-		case E_FUNC_PWM01:
-		{
-            if (function == E_FUNC_PWM01)
-            {
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<12);
-            }else
-            {
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x1<<(12+(function-E_FUNC_PWM0)));
-            }
-	        *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-		}break;
-
-		case E_FUNC_PWM2:
-		case E_FUNC_PWM3:
-		case E_FUNC_PWM23:
-		{
-            if (function == E_FUNC_PWM23)
-            {
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<14);
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<9);
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-            }else
-            {
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x1<<(14+(function-E_FUNC_PWM2)));
-                if (function == E_FUNC_PWM2)
-    		  	    *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<11);
-                else
-        		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x1<<9);
-            }
-		}break;
-
-		case E_FUNC_PWM4:
-		case E_FUNC_PWM5:
-		case E_FUNC_PWM45:
-		{
-            if (function == E_FUNC_PWM45)
-    		{
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<11);
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<4);
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x1<<5);
-            }else
-            if (function == E_FUNC_PWM4)
-            {
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x1<<11);
-    		  	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x1<<4);
-            }else
-            {
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x1<<5);
-            }
-		}break;
-
-		case E_FUNC_PWM6:
-		case E_FUNC_PWM7:
-		case E_FUNC_PWM67:
-		{
-            if (function == E_FUNC_PWM67)
-		  	{
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x3<<0);
-            }else
-            if (function == E_FUNC_PWM6)
-            {
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x1<<0);
-            }else
-            {
-                *((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPEMFP))) | (0x1<<1);
-            }
-		}break;
-
-		 
-		 
-		 
-		case E_FUNC_EBI_16B:	
-		{
-			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x3<<2);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x3<<13);			
-		
-			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x703E);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0xFF<<16);			
-		}
-				
-		case E_FUNC_EBI_8B:	
-		{
-            if (function == E_FUNC_EBI_8B)
-            {
-    			
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) & ~(0x3<<2);
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0x3<<13);			
-    		
-    			
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) & ~(0x703E);
-              	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) & ~(0xFF<<16);			
-            }
-
-			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->ALTMFP))) | (0x3<<11);			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0x1<<8);
-			
-			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<10);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x3<<6);
-			
-			
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPAMFP))) | (0x3<<6);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPCMFP))) | (0x3<<6) | (0x3<<14);
-          	*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))=(*((volatile unsigned int *)(&((GCR_T *) ((( uint32_t)0x50000000) + 0x00000))->GPBMFP))) | (0x3<<12);
-		}break;
-
-		default:
-			return (((1) ? 0xFFFF0000 : 0x00000000) | ((((MODULE_ID_DRVGPIO) & 0xFF) | ((1) ? 0x100 : 0x00)) << 7) | ((1) & 0x7F));
-	}
-
-	return 0;
-}
-
- 
- 
- 
- 	
- 
- 
- 
- 
- 
- 
-int32_t DrvGPIO_GetVersion(void)
-{
-   return (((1) << 16) | ((04) << 8) | (005));
-}
-
-
+} 

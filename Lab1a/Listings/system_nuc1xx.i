@@ -1,4 +1,4 @@
-# 1 "NUC1xx\\system_NUC1xx.c"
+# 1 "..\\NUC1xx\\system_NUC1xx.c"
  
  
  
@@ -260,8 +260,8 @@ typedef unsigned     long long uintmax_t;
 
 
  
-# 7 "NUC1xx\\system_NUC1xx.c"
-# 1 "NUC1xx\\NUC1xx.h"
+# 7 "..\\NUC1xx\\system_NUC1xx.c"
+# 1 "..\\NUC1xx\\NUC1xx.h"
  
  
  
@@ -335,7 +335,7 @@ typedef enum IRQn
 
 
 
-# 1 "./CoreSupport/core_cm0.h"
+# 1 "../CoreSupport/core_cm0.h"
  
 
 
@@ -390,7 +390,7 @@ typedef enum IRQn
 
 
 
-# 56 "./CoreSupport/core_cm0.h"
+# 56 "../CoreSupport/core_cm0.h"
 
 
 
@@ -410,7 +410,7 @@ typedef enum IRQn
 
  
 
-# 82 "./CoreSupport/core_cm0.h"
+# 82 "../CoreSupport/core_cm0.h"
 
 
 
@@ -693,7 +693,7 @@ typedef struct
 
 
 
-# 377 "./CoreSupport/core_cm0.h"
+# 377 "../CoreSupport/core_cm0.h"
 
 
  
@@ -704,7 +704,7 @@ typedef struct
 
 
 
-# 395 "./CoreSupport/core_cm0.h"
+# 395 "../CoreSupport/core_cm0.h"
 
 
  
@@ -771,7 +771,7 @@ extern uint32_t __REV16(uint16_t value);
 extern int32_t __REVSH(int16_t value);
 
 
-# 500 "./CoreSupport/core_cm0.h"
+# 500 "../CoreSupport/core_cm0.h"
 
 
 
@@ -830,7 +830,7 @@ static __inline void __set_CONTROL(uint32_t control)
 
 
 
-# 770 "./CoreSupport/core_cm0.h"
+# 770 "../CoreSupport/core_cm0.h"
 
 
 
@@ -1022,8 +1022,8 @@ static __inline void NVIC_SystemReset(void)
 
 
  
-# 75 "NUC1xx\\NUC1xx.h"
-# 1 "NUC1xx\\system_NUC1xx.h"
+# 75 "..\\NUC1xx\\NUC1xx.h"
+# 1 "..\\NUC1xx\\system_NUC1xx.h"
  
  
  
@@ -1083,8 +1083,8 @@ extern void SystemCoreClockUpdate (void);
 
 
 
-# 76 "NUC1xx\\NUC1xx.h"
-# 1 "./Include/System\\SysInfra.h"
+# 76 "..\\NUC1xx\\NUC1xx.h"
+# 1 "../Include/System\\SysInfra.h"
  
  
  
@@ -1098,7 +1098,7 @@ extern void SystemCoreClockUpdate (void);
  
  
  
-# 1 "./Include/System\\ModuleID.h"
+# 1 "../Include/System\\ModuleID.h"
  
  
  
@@ -1270,9 +1270,9 @@ typedef enum
 } E_SYSINFRA_MODULE_ID;
 
 
-# 15 "./Include/System\\SysInfra.h"
-# 16 "./Include/System\\SysInfra.h"
-# 17 "./Include/System\\SysInfra.h"
+# 15 "../Include/System\\SysInfra.h"
+# 16 "../Include/System\\SysInfra.h"
+# 17 "../Include/System\\SysInfra.h"
 
 
 
@@ -1332,7 +1332,7 @@ typedef enum
 
 
 
-# 77 "NUC1xx\\NUC1xx.h"
+# 77 "..\\NUC1xx\\NUC1xx.h"
 
 
 #pragma anon_unions
@@ -7879,7 +7879,7 @@ typedef struct
  
 
 
-# 6629 "NUC1xx\\NUC1xx.h"
+# 6629 "..\\NUC1xx\\NUC1xx.h"
 
 
 
@@ -7923,7 +7923,7 @@ typedef struct
 
 
 
-# 6685 "NUC1xx\\NUC1xx.h"
+# 6685 "..\\NUC1xx\\NUC1xx.h"
 
 
 
@@ -7935,7 +7935,7 @@ typedef struct
  
  
  
-# 6703 "NUC1xx\\NUC1xx.h"
+# 6703 "..\\NUC1xx\\NUC1xx.h"
 
 
 
@@ -7978,7 +7978,7 @@ typedef struct
 
 
 
-# 6756 "NUC1xx\\NUC1xx.h"
+# 6756 "..\\NUC1xx\\NUC1xx.h"
 
 
 
@@ -7999,9 +7999,9 @@ typedef volatile unsigned short vu16;
 
 
 
-# 6782 "NUC1xx\\NUC1xx.h"
+# 6782 "..\\NUC1xx\\NUC1xx.h"
 
-# 6789 "NUC1xx\\NUC1xx.h"
+# 6789 "..\\NUC1xx\\NUC1xx.h"
 
 
 
@@ -8016,11 +8016,11 @@ typedef volatile unsigned short vu16;
 
 
  
-# 6835 "NUC1xx\\NUC1xx.h"
+# 6835 "..\\NUC1xx\\NUC1xx.h"
 
 
                                                                                                  
-# 8 "NUC1xx\\system_NUC1xx.c"
+# 8 "..\\NUC1xx\\system_NUC1xx.c"
 
 
 

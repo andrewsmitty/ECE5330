@@ -1,10 +1,10 @@
 .\objects\tutorial.o: tutorial.c
 .\objects\tutorial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\tutorial.o: ./NUC1xx/NUC1xx.h
-.\objects\tutorial.o: ./CoreSupport/core_cm0.h
+.\objects\tutorial.o: ../NUC1xx/NUC1xx.h
+.\objects\tutorial.o: ../CoreSupport/core_cm0.h
 .\objects\tutorial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\tutorial.o: ./NUC1xx/system_NUC1xx.h
-.\objects\tutorial.o: ./Include/System\SysInfra.h
-.\objects\tutorial.o: ./Include/System\ModuleID.h
-.\objects\tutorial.o: ./Include/Driver/DrvSYS.h
-.\objects\tutorial.o: ./Include/Driver/DrvGPIO.h
+.\objects\tutorial.o: ../NUC1xx/system_NUC1xx.h
+.\objects\tutorial.o: ../Include/System\SysInfra.h
+.\objects\tutorial.o: ../Include/System\ModuleID.h
+.\objects\tutorial.o: ../Include/Driver/DrvSYS.h
+.\objects\tutorial.o: ../Include/Driver/DrvGPIO.h

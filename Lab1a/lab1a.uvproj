@@ -376,7 +376,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>./;./CoreSupport;./NUC1xx;./Include;./Include/Driver;./Driver;./Src/Driver</IncludePath>
+              <IncludePath>./;../CoreSupport;../NUC1xx;../Include;../Include/Driver;../Driver;../Src/Driver</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -428,12 +428,12 @@
             <File>
               <FileName>core_cm0.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\CoreSupport\core_cm0.c</FilePath>
+              <FilePath>..\CoreSupport\core_cm0.c</FilePath>
             </File>
             <File>
               <FileName>system_NUC1xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\NUC1xx\system_NUC1xx.c</FilePath>
+              <FilePath>..\NUC1xx\system_NUC1xx.c</FilePath>
             </File>
           </Files>
         </Group>
