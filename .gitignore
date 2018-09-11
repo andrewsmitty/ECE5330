@@ -1,8 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
-CoreSupport
 Listings
-NUC1xx
 lab1a/Objects/*
 lab1a/Objects
 lab1a/Listings
