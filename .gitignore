@@ -3,11 +3,13 @@
 /CoreSupport
 /Listings
 /NUC1xx
-/Listings
-/Lab1a/Objects
-/Lab1a/Listings
+#Lab1a/Objects
+#Lab1a/Listings
 
-
-.o*
-.axf*
-.htm*
+Lab1a/Objects/core_cm0.o
+Lab1a/Objects/drvgpio.o
+Lab1a/Objects/drvsys.o
+Lab1a/Objects/lab1a.axf
+Lab1a/Objects/lab1a.build_log.htm
+Lab1a/Objects/system_nuc1xx.o
+Lab1a/Objects/tutorial.o
