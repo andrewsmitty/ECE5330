@@ -3,10 +3,10 @@
 /CoreSupport
 /Listings
 /NUC1xx
-/Objects
 /Listings
-/Lab1a/Listings
 /Lab1a/Objects
+/Lab1a/Listings
+
 
 .o*
 .axf*
