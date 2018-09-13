@@ -4,10 +4,13 @@ Listings
 lab1a/Objects/*
 lab1a/Objects
 lab1a/Listings
+lab1b/Objects/*
+lab1b/Objects
+lab1b/Listings
+
 
 .Andrew
 
-.scvd
-.ignoring.uvopt
-.uvproj
-.Andrew
+.scvd*
+.uvopt*
+.Andrew*

@@ -1,9 +1,0 @@
-.\objects\hello_world.o: hello_world.c
-.\objects\hello_world.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\hello_world.o: ../NUC1xx/NUC1xx.h
-.\objects\hello_world.o: ../CoreSupport/core_cm0.h
-.\objects\hello_world.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\hello_world.o: ../NUC1xx/system_NUC1xx.h
-.\objects\hello_world.o: ../Include/System\SysInfra.h
-.\objects\hello_world.o: ../Include/System\ModuleID.h
-.\objects\hello_world.o: ../Include/NUC1xx-LB_002/LCD_Driver.h

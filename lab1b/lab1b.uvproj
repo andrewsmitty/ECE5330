@@ -47,7 +47,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>lab1a</OutputName>
+          <OutputName>lab1b</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -450,20 +450,15 @@
               <FileType>1</FileType>
               <FilePath>.\Src\Driver\DrvSYS.c</FilePath>
             </File>
-            <File>
-              <FileName>Seven_Segment.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\NUC1xx-LB_002\Seven_Segment.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>seven_seg.c</FileName>
+              <FileName>interrupt_buzzer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\seven_seg.c</FilePath>
+              <FilePath>.\interrupt_buzzer.c</FilePath>
             </File>
           </Files>
         </Group>
