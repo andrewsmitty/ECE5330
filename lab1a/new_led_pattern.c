@@ -1,8 +1,9 @@
-/*	Tutorial
+/*	new_led_pattern
  * 	ECE 5330
  *	Written by: Andrew Smit
- *	8/26/18
+ *	9/10/18
  *
+ *	Create a new pattern on the LEDs, both red and RGB
  */
 	
 #include <stdio.h>
@@ -26,27 +27,82 @@ int main (void) {
 	while(1){
 		/* DrvGPIO.h gives us the option to use the pins/ports directly for this chip */
 		/* see line 35 in DrvGPIO.h */
+		
+		// blue
 		GPA_12 = 0;
 		GPA_13 = 1;
 		GPA_14 = 1;
-		GPC_15 = 1; //off
-		GPC_12 = 0; //on
+		
+		GPC_12 = 0;
+		GPC_13 = 1;
+		GPC_14 = 1;
+		GPC_15 = 0;
 		DrvSYS_Delay(10000000); //DrvSYS.h line 182, DrvSYS.c line 1310
-		GPA_13 = 0;
+		
+		// green
 		GPA_12 = 1;
-		GPC_12 = 1; //off
-		GPC_13 = 0; //on
-		DrvSYS_Delay(10000000);
-		GPA_14 = 0;
-		GPA_13 = 1;
-		GPC_13 = 1; //off
-		GPC_14 = 0; //on
-		DrvSYS_Delay(10000000);
-		GPA_14 = 0;
 		GPA_13 = 0;
-		GPA_12 = 0;
-		GPC_14 = 1; //off
-		GPC_15 = 0; //on
+		GPA_14 = 1;
+		
+		GPC_12 = 1;
+		GPC_13 = 0;
+		GPC_14 = 1;
+		GPC_15 = 0;
 		DrvSYS_Delay(10000000);
+		
+		// red
+		GPA_12 = 1;
+		GPA_13 = 1;
+		GPA_14 = 0;
+		
+		GPC_12 = 1;
+		GPC_13 = 1;
+		GPC_14 = 0;
+		GPC_15 = 0;
+		DrvSYS_Delay(10000000);
+		
+		// blue and green
+		GPA_12 = 0;
+		GPA_13 = 0;
+		GPA_14 = 1;
+		
+		GPC_12 = 1;
+		GPC_13 = 0;
+		GPC_14 = 1;
+		GPC_15 = 0;
+		DrvSYS_Delay(10000000);
+		
+		// blue and red
+		GPA_12 = 0;
+		GPA_13 = 1;
+		GPA_14 = 0;
+		
+		GPC_12 = 0;
+		GPC_13 = 1;
+		GPC_14 = 1;
+		GPC_15 = 0;
+		DrvSYS_Delay(10000000);
+		
+		// green and red
+		GPA_12 = 1;
+		GPA_13 = 0;
+		GPA_14 = 0;
+		
+		GPC_12 = 0;
+		GPC_13 = 1;
+		GPC_14 = 0;
+		GPC_15 = 1;
+		DrvSYS_Delay(10000000);
+		
+		// blue and green and red
+		GPA_12 = 0;
+		GPA_13 = 0;
+		GPA_14 = 0;
+		
+		GPC_12 = 0;
+		GPC_13 = 0;
+		GPC_14 = 1;
+		GPC_15 = 1;
+		DrvSYS_Delay(10000000);	
 	}//end while
 } //end main
