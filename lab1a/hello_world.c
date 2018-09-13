@@ -3,7 +3,7 @@
  *	Written by: Andrew Smit
  *	9/12/18
  *
- *	Lab 1a problem 1d
+ *	Lab 1a problem 4
  *	print hello world to the LCD
  * 
  */
@@ -34,8 +34,6 @@ int main (void) {
 	print_lcd(2,s2);
 	print_lcd(3,s3);
 	
-	
-	// initialize LEDs
 	while(1){
 
 	}//end while

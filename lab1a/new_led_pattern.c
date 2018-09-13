@@ -3,6 +3,7 @@
  *	Written by: Andrew Smit
  *	9/10/18
  *
+ *  Lab1a problem 2
  *	Create a new pattern on the LEDs, both red and RGB
  */
 	

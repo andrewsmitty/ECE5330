@@ -3,7 +3,7 @@
  *	Written by: Andrew Smit
  *	9/12/18
  *
- *	Lab 1a problem 1c
+ *	Lab 1a problem 3
  *	make the LEDs blink with a frequency of 1/2 s
  *  using a timer/interrupts
  */
