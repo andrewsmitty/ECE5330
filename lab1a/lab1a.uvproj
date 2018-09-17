@@ -451,9 +451,14 @@
               <FilePath>.\Src\Driver\DrvSYS.c</FilePath>
             </File>
             <File>
-              <FileName>Seven_Segment.c</FileName>
+              <FileName>LCD_Driver.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Src\NUC1xx-LB_002\Seven_Segment.c</FilePath>
+              <FilePath>.\Src\NUC1xx-LB_002\LCD_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>Ascii_Table.C</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\NUC1xx-LB_002\Ascii_Table.C</FilePath>
             </File>
           </Files>
         </Group>
@@ -461,9 +466,9 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>seven_seg.c</FileName>
+              <FileName>hello_world.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\seven_seg.c</FilePath>
+              <FilePath>.\hello_world.c</FilePath>
             </File>
           </Files>
         </Group>
