@@ -451,14 +451,14 @@
               <FilePath>.\Src\Driver\DrvSYS.c</FilePath>
             </File>
             <File>
-              <FileName>ScanKey.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\NUC1xx-LB_002\ScanKey.c</FilePath>
-            </File>
-            <File>
               <FileName>LCD_Driver.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\NUC1xx-LB_002\LCD_Driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>DrvADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Src\Driver\DrvADC.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -466,14 +466,14 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>optical_sensor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\optical_sensor.c</FilePath>
-            </File>
-            <File>
               <FileName>Ascii_Table.C</FileName>
               <FileType>1</FileType>
               <FilePath>.\Src\NUC1xx-LB_002\Ascii_Table.C</FilePath>
+            </File>
+            <File>
+              <FileName>dac_4_bit.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\dac_4_bit.c</FilePath>
             </File>
           </Files>
         </Group>
