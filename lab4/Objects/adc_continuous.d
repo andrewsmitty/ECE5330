@@ -1,0 +1,12 @@
+.\objects\adc_continuous.o: adc_continuous.c
+.\objects\adc_continuous.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adc_continuous.o: ../NUC1xx/NUC1xx.h
+.\objects\adc_continuous.o: ../CoreSupport/core_cm0.h
+.\objects\adc_continuous.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc_continuous.o: ../NUC1xx/system_NUC1xx.h
+.\objects\adc_continuous.o: ../Include/System\SysInfra.h
+.\objects\adc_continuous.o: ../Include/System\ModuleID.h
+.\objects\adc_continuous.o: ../Include/Driver/DrvSYS.h
+.\objects\adc_continuous.o: ../Include/Driver/DrvGPIO.h
+.\objects\adc_continuous.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\adc_continuous.o: ../Include/Driver/DrvADC.h

@@ -63,9 +63,10 @@ void ADCCallback(uint32_t u32UserData) {
 		double ADC_DATA_FLOAT = 3.3/4095*(sum);
 		char display[4][16];
 		sprintf(display[0],"ADC data!");
-		sprintf(display[1],"hex: %x",sum);
-		sprintf(display[2],"dec: %d",sum);
-		sprintf(display[3],"V:   %1.4fV",ADC_DATA_FLOAT);
+		sprintf(display[1],"hex:  %x",sum);
+		//sprintf(display[2],"dec: %d",sum);
+		sprintf(display[2],"V:    %1.4fV",ADC_DATA_FLOAT);
+		sprintf(display[3],"full: %3.2f", ADC_DATA_FLOAT/3.3*100);
 		clr_all_panel();
 		DrvSYS_Delay(1000);
 		for(int i = 0; i<4; i++){
@@ -84,12 +85,6 @@ void ADCCallback(uint32_t u32UserData) {
 int main (void) {
 	
 	uint32_t u32UserData;
-	
-	//UNLOCKREG();
-	//SYSCLK->PWRCON.OSC22M_EN=1;
-	//while((SYSCLK->CLKSTATUS.OSC22M_STB)!=1);
-	//SYSCLK->CLKSEL0.HCLK_S=7;
-	//LOCKREG();
 	
 	NVIC_EnableIRQ(TMR0_IRQn); // enable NVIC
 	
@@ -116,17 +111,14 @@ int main (void) {
 	GPA_13 = 1;
 	GPA_14 = 0;
 	
-	//DrvSYS_Delay(100000);
 	// Initialize/setup ADC
 	DrvADC_Open(ADC_SINGLE_END, ADC_CONTINUOUS_OP, 0x80, 7, 1);
 	ADC->ADCHER.PRESEL = 0b00;
 	DrvADC_EnableADCInt(ADCCallback, u32UserData);
 	ADC_COUNT = 0;
 	DrvADC_StartConvert();
-	//DrvSYS_Delay(100000);
 	
 	while(1){
-		//DrvSYS_Delay(20000000); //DrvSYS.h line 182, DrvSYS.c line 1310
-		//DrvADC_StartConvert();
+
 	}//end while
 } //end main

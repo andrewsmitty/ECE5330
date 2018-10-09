@@ -1,0 +1,9 @@
+.\objects\drvadc.o: Src\Driver\DrvADC.c
+.\objects\drvadc.o: ../NUC1xx/NUC1xx.h
+.\objects\drvadc.o: ../CoreSupport/core_cm0.h
+.\objects\drvadc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\drvadc.o: ../NUC1xx/system_NUC1xx.h
+.\objects\drvadc.o: ../Include/System\SysInfra.h
+.\objects\drvadc.o: ../Include/System\ModuleID.h
+.\objects\drvadc.o: ../Include/Driver/DrvADC.h
+.\objects\drvadc.o: ../Include/Driver/DrvSYS.h

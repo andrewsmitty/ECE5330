@@ -450,25 +450,15 @@
               <FileType>1</FileType>
               <FilePath>.\Src\Driver\DrvSYS.c</FilePath>
             </File>
-            <File>
-              <FileName>LCD_Driver.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\NUC1xx-LB_002\LCD_Driver.c</FilePath>
-            </File>
-            <File>
-              <FileName>Ascii_Table.C</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Src\NUC1xx-LB_002\Ascii_Table.C</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>hello_world.c</FileName>
+              <FileName>new_led_pattern.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\hello_world.c</FilePath>
+              <FilePath>.\new_led_pattern.c</FilePath>
             </File>
           </Files>
         </Group>
