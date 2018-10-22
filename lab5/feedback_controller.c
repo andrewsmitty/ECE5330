@@ -186,7 +186,6 @@ int main (void) {
 	COUNT = 0;
 	PWM_Init();
 	
-	
 	// initialize output ports
 	// DrvPWM_SelectClockSource(DRVPWM_TIMER1,DRVPWM_EXT_12M);
 	// DrvGPIO_Open(E_GPA, 15, E_IO_OUTPUT); // port 0
