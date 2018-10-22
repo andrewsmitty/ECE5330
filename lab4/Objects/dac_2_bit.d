@@ -1,0 +1,12 @@
+.\objects\dac_2_bit.o: dac_2_bit.c
+.\objects\dac_2_bit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\dac_2_bit.o: ../NUC1xx/NUC1xx.h
+.\objects\dac_2_bit.o: ../CoreSupport/core_cm0.h
+.\objects\dac_2_bit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\dac_2_bit.o: ../NUC1xx/system_NUC1xx.h
+.\objects\dac_2_bit.o: ../Include/System\SysInfra.h
+.\objects\dac_2_bit.o: ../Include/System\ModuleID.h
+.\objects\dac_2_bit.o: ../Include/Driver/DrvSYS.h
+.\objects\dac_2_bit.o: ../Include/Driver/DrvGPIO.h
+.\objects\dac_2_bit.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\dac_2_bit.o: ../Include/Driver/DrvADC.h

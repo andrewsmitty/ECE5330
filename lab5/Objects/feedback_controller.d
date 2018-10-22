@@ -1,0 +1,13 @@
+.\objects\feedback_controller.o: feedback_controller.c
+.\objects\feedback_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\feedback_controller.o: ../NUC1xx/NUC1xx.h
+.\objects\feedback_controller.o: ../CoreSupport/core_cm0.h
+.\objects\feedback_controller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\feedback_controller.o: ../NUC1xx/system_NUC1xx.h
+.\objects\feedback_controller.o: ../Include/System\SysInfra.h
+.\objects\feedback_controller.o: ../Include/System\ModuleID.h
+.\objects\feedback_controller.o: ../Include/Driver/DrvSYS.h
+.\objects\feedback_controller.o: ../Include/Driver/DrvGPIO.h
+.\objects\feedback_controller.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\feedback_controller.o: ../Include/Driver/DrvADC.h
+.\objects\feedback_controller.o: ../Include/Driver/DrvPWM.h

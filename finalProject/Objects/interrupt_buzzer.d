@@ -1,0 +1,10 @@
+.\objects\interrupt_buzzer.o: interrupt_buzzer.c
+.\objects\interrupt_buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\interrupt_buzzer.o: ../NUC1xx/NUC1xx.h
+.\objects\interrupt_buzzer.o: ../CoreSupport/core_cm0.h
+.\objects\interrupt_buzzer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\interrupt_buzzer.o: ../NUC1xx/system_NUC1xx.h
+.\objects\interrupt_buzzer.o: ../Include/System\SysInfra.h
+.\objects\interrupt_buzzer.o: ../Include/System\ModuleID.h
+.\objects\interrupt_buzzer.o: ../Include/Driver/DrvSYS.h
+.\objects\interrupt_buzzer.o: ../Include/Driver/DrvGPIO.h

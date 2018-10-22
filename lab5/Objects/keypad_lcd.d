@@ -1,0 +1,12 @@
+.\objects\keypad_lcd.o: keypad_LCD.c
+.\objects\keypad_lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\keypad_lcd.o: ../NUC1xx/NUC1xx.h
+.\objects\keypad_lcd.o: ../CoreSupport/core_cm0.h
+.\objects\keypad_lcd.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\keypad_lcd.o: ../NUC1xx/system_NUC1xx.h
+.\objects\keypad_lcd.o: ../Include/System\SysInfra.h
+.\objects\keypad_lcd.o: ../Include/System\ModuleID.h
+.\objects\keypad_lcd.o: ../Include/Driver/DrvSYS.h
+.\objects\keypad_lcd.o: ../Include/Driver/DrvGPIO.h
+.\objects\keypad_lcd.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\keypad_lcd.o: ../Include/NUC1xx-LB_002/ScanKey.h

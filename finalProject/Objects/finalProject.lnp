@@ -1,0 +1,17 @@
+--cpu Cortex-M0
+".\objects\startup_nuc1xx.o"
+".\objects\core_cm0.o"
+".\objects\system_nuc1xx.o"
+".\objects\drvgpio.o"
+".\objects\drvsys.o"
+".\objects\lcd_driver.o"
+".\objects\drvadc.o"
+".\objects\drvpwm.o"
+".\objects\scankey.o"
+".\objects\drvi2s.o"
+".\objects\ascii_table.o"
+".\objects\passthrough.o"
+--strict --scatter ".\Objects\finalProject.sct"
+--map --first='startup_NUC1xx.o(RESET)' --datacompressor=off --info=inline --entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--info sizes --info totals
+--list ".\Listings\finalProject.map" -o .\Objects\finalProject.axf

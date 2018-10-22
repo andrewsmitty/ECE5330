@@ -1,0 +1,12 @@
+.\objects\optical_sensor.o: optical_sensor.c
+.\objects\optical_sensor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\optical_sensor.o: ../NUC1xx/NUC1xx.h
+.\objects\optical_sensor.o: ../CoreSupport/core_cm0.h
+.\objects\optical_sensor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\optical_sensor.o: ../NUC1xx/system_NUC1xx.h
+.\objects\optical_sensor.o: ../Include/System\SysInfra.h
+.\objects\optical_sensor.o: ../Include/System\ModuleID.h
+.\objects\optical_sensor.o: ../Include/Driver/DrvSYS.h
+.\objects\optical_sensor.o: ../Include/Driver/DrvGPIO.h
+.\objects\optical_sensor.o: ../Include/NUC1xx-LB_002/ScanKey.h
+.\objects\optical_sensor.o: ../Include/NUC1xx-LB_002/LCD_Driver.h

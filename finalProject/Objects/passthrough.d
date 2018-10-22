@@ -1,0 +1,12 @@
+.\objects\passthrough.o: passThrough.c
+.\objects\passthrough.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\passthrough.o: ../NUC1xx/NUC1xx.h
+.\objects\passthrough.o: ../CoreSupport/core_cm0.h
+.\objects\passthrough.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\passthrough.o: ../NUC1xx/system_NUC1xx.h
+.\objects\passthrough.o: ../Include/System\SysInfra.h
+.\objects\passthrough.o: ../Include/System\ModuleID.h
+.\objects\passthrough.o: ../Include/Driver/DrvSYS.h
+.\objects\passthrough.o: ../Include/Driver/DrvGPIO.h
+.\objects\passthrough.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\passthrough.o: ../Include/Driver/DrvI2S.h

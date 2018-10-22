@@ -1,0 +1,10 @@
+.\objects\half_second_blink.o: half_second_blink.c
+.\objects\half_second_blink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\half_second_blink.o: ../NUC1xx/NUC1xx.h
+.\objects\half_second_blink.o: ../CoreSupport/core_cm0.h
+.\objects\half_second_blink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\half_second_blink.o: ../NUC1xx/system_NUC1xx.h
+.\objects\half_second_blink.o: ../Include/System\SysInfra.h
+.\objects\half_second_blink.o: ../Include/System\ModuleID.h
+.\objects\half_second_blink.o: ../Include/Driver/DrvSYS.h
+.\objects\half_second_blink.o: ../Include/Driver/DrvGPIO.h
