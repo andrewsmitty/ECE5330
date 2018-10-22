@@ -11,3 +11,4 @@
 .\objects\feedback_controller.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
 .\objects\feedback_controller.o: ../Include/Driver/DrvADC.h
 .\objects\feedback_controller.o: ../Include/Driver/DrvPWM.h
+.\objects\feedback_controller.o: ../Include/NUC1xx-LB_002/ScanKey.h
