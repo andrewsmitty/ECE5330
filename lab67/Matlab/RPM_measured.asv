@@ -1,0 +1,2 @@
+data = csvread('Forward_Control_Data.txt')
+plot(1:length(targets),targets,1:length(data2),data2);

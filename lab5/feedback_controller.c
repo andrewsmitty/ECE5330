@@ -103,18 +103,12 @@ void ADCCallback(uint32_t u32UserData) {
 		}
 		
 		PWM_OUT = (int)(PWM_OUT_PERCENT/100.0*4095);
-		//PWMA->CMR3 = PWM_OUT;//duty
-		//float PWM = ((float)TARGET-(float)NO_LED)/(FULL_LED-NO_LED)*4095;
+
 		if(INIT_DONE == 1)
 			PWMA->CMR3 = PWM_OUT;
 		
 		sprintf(display[0], "LIGHT: %d%%    ",PWM*100/4095);
-		//sprintf(display[0], "ADCIN: %d    ",sum);
-		//sprintf(display[1], "NOLED: %d     ",NO_LED);
-		//sprintf(display[2], "FULLLED: %d    ",FULL_LED);
-		//sprintf(display[1], "V: %1.5f     ",ADC_DATA_FLOAT);
 		sprintf(display[1],"ADC: %3.2f%%   ",ADC_DATA_PERCENT);
-		//sprintf(display[2],"ERR: %3.2f   ",ERROR_PERCENT);
 		sprintf(display[2],"PWM: %d   ",PWM_OUT);
 		sprintf(display[3],"DUTY: %3.2f%%   ",PWM_OUT_PERCENT);
 		if(DISPLAY_COUNT > 600){
@@ -194,12 +188,9 @@ int main (void) {
 	char display[2][16];
 	
 	NVIC_EnableIRQ(TMR0_IRQn); // enable NVIC
-	//NVIC_EnableIRQ(TMR1_IRQn); // enable NVIC
 	
 	SYSCLK->CLKSEL1.TMR0_S = 7; // external 22 MHz clock
 	SYSCLK->APBCLK.TMR0_EN = 1;
-	//SYSCLK->CLKSEL1.TMR1_S = 7; // external 22 MHz clock
-	//SYSCLK->APBCLK.TMR1_EN = 1;
 	
 	// timer settings
 	TIMER0->TCSR.MODE = 1; // periodic mode
@@ -213,32 +204,16 @@ int main (void) {
 	TIMER0->TCSR.TDR_EN = 1; // enable data register function
 	TIMER0->TCSR.CTB = 0; // Make TDR the event count
 	
-	//TIMER1->TCSR.MODE = 1; // periodic mode
-	//TIMER1->TCSR.PRESCALE = 50; // prescale
-	//TIMER1->TCMPR = 100000; // TMCP value
-	//TIMER1->TCSR.IE = 1; //interrupt enable
-	//TIMER1->TISR.TIF = 1; // clear interrupt flag
-	//TIMER1->TCSR.TDR_EN = 1; // enable data register function
-	//TIMER1->TCSR.CRST = 1; // reset timer
-	//TIMER1->TCSR.CEN = 1; // enable timer 1
-	//TIMER1->TCSR.TDR_EN = 1; // enable data register function
-	//TIMER1->TCSR.CTB = 0; // Make TDR the event count
-	
 	SYSCtl_Init();
 	Initial_panel();
 	clr_all_panel();
 
 	// initialize LEDs
-	//GPA_13 = 1;
-	//GPA_14 = 1;
 	GPA_14 = 0;
 	
 	COUNT = 0;
 	DISPLAY_COUNT = 0;
 	PWM_Init();
-	
-	// DrvSYS_Delay(100000);
-	// Initialize/setup ADC
 	
 	DrvADC_Open(ADC_SINGLE_END, ADC_CONTINUOUS_OP, 0x40, 7, 255);
 	//ADC->ADCHER.PRESEL = 0b00;
@@ -249,15 +224,11 @@ int main (void) {
 	PWM_OUT = 0x0000;
 	PWM_OUT_PERCENT = 0;
 	led_init();
-	
-	// Check to see if timer is enabled
-	
-	//PWMTimerIsEn = DrvPWM_IsTimerEnabled(DRVPWM_TIMER3);
-	
-	//sprintf(display[0],"PWMT3: %d",PWMTimerIsEn);
-	//print_lcd(2,display[0]);
-	
-
+		
+	GPC_12 = 1;
+	GPC_13 = 1;
+	GPC_14 = 1;
+	GPC_15 = 1;
 	
 	while(1){
 		keypad_id = Scankey();
@@ -265,15 +236,31 @@ int main (void) {
 			if(keypad_id == 1) {
 				TARGET = 0x0FFF;
 				PWM = 0x0FFF;
+				GPC_12 = 0;
+				GPC_13 = 1;
+				GPC_14 = 1;
+				GPC_15 = 1;
 			} else if( keypad_id == 2) {
 				TARGET = NO_LED +((FULL_LED - NO_LED)*3/4);
 				PWM = 0x0bFF;
+				GPC_12 = 1;
+				GPC_13 = 0;
+				GPC_14 = 1;
+				GPC_15 = 1;
 			} else if( keypad_id == 3) {
 				TARGET = NO_LED +((FULL_LED - NO_LED)*1/2);//duty
 				PWM = 0x07FF;
+				GPC_12 = 1;
+				GPC_13 = 1;
+				GPC_14 = 0;
+				GPC_15 = 1;
 			} else if( keypad_id == 4) {
 				TARGET = NO_LED +((FULL_LED - NO_LED)*1/4);
 				PWM = 0x03FF;
+				GPC_12 = 1;
+				GPC_13 = 1;
+				GPC_14 = 1;
+				GPC_15 = 0;
 			} else if( keypad_id == 5) {
 				TARGET = NO_LED +((FULL_LED - NO_LED)*0);
 				PWM = 0x0000;

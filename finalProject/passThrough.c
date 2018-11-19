@@ -15,6 +15,7 @@
 int ADC_COUNT;
 uint32_t ADC_DATA[4];
 uint32_t COUNT;
+uint32_t TXData;
 
 void I2S_Callback_Rx_Fifo(uint32_t din)
 {
@@ -24,12 +25,14 @@ void I2S_Callback_Rx_Fifo(uint32_t din)
 	uint16_t u16Left;
 	uint16_t u16Right;
 	uint8_t u8RxLevel;
-	u32data = I2S->I2SRXFIFO;
+	//u32data = I2S->I2SRXFIFO;
+	u32data = _DRVI2S_READ_RX_FIFO();
 	//u32data = din;
-	//u32data = _DRVI2S_READ_RX_FIFO();
 	u16Left = (u32data & 0xFFFF0000) >> 16;
 	u16Right = (u32data & 0x0000FFFF);
 	u8RxLevel = I2S->I2SSTATUS.RX_LEVEL;
+	
+	
 	
 	char display[4][16];
 	sprintf(display[0],"FIFO: 0x%x      ",u32data);
@@ -41,6 +44,7 @@ void I2S_Callback_Rx_Fifo(uint32_t din)
 	print_lcd(2,display[2]);
 	print_lcd(3,display[3]);
 	
+	/*
 	if(COUNT == 200){
 		COUNT = 0;
 		u32dataOut = 0xFFFFFFFF;
@@ -48,10 +52,14 @@ void I2S_Callback_Rx_Fifo(uint32_t din)
 		u32dataOut = 0x00000000;
 		COUNT++;
 	}
+	*/
+	u32dataOut++;
 	
 	_DRVI2S_WRITE_TX_FIFO(u32dataOut);
-	I2S->I2SCON.CLR_RXFIFO = 1;
-	I2S->I2SCON.CLR_TXFIFO = 1;
+	DrvI2S_ClearRxFIFO();
+	DrvI2S_ClearTxFIFO();
+	//I2S->I2SCON.CLR_RXFIFO = 1;
+	//I2S->I2SCON.CLR_TXFIFO = 1;
 	DrvI2S_EnableRx ( );
 }
 
@@ -83,31 +91,35 @@ void I2S_Init(uint32_t fs, uint8_t wordWidth, uint8_t audioFormat)
 	st.u8DataFormat = DRVI2S_FORMAT_MSB;
 	st.u8Mode = DRVI2S_MODE_MASTER;
 	/* Tx FIFO threshold level is 0 word data */
-	st.u8TxFIFOThreshold = DRVI2S_FIFO_LEVEL_WORD_0;
+	st.u8TxFIFOThreshold = DRVI2S_FIFO_LEVEL_WORD_1;
 	/* Rx FIFO threshold level is 8 word data 8*/
 	st.u8RxFIFOThreshold = DRVI2S_FIFO_LEVEL_WORD_8;
 
 	//DrvI2S_EnableInt(I2S_TX_RIGHT_ZERO_CROSS,I2S_Callback_Right);
 	//DrvI2S_EnableInt(I2S_TX_LEFT_ZERO_CROSS,I2S_Callback_Left);
+	//DrvSYS_SelectIPClockSource(E_SYS_I2S_CLKSRC,0x02);
 	DrvI2S_Open(&st);
-	DrvI2S_SelectClockSource(DRVI2S_HCLK); /* I2S clock source from external 12M */
+	DrvGPIO_InitFunction(E_FUNC_I2S);
+	//DrvI2S_SelectClockSource(DRVI2S_HCLK); /* I2S clock source from external 12M */
 	/* Enable I2S Rx DMA function */
-	//DrvI2S_EnableRxDMA ( );
-	//DrvI2S_DisableRxDMA();
+	//DrvI2S_EnableRxDMA();
+	DrvI2S_DisableRxDMA();
+	DrvI2S_DisableTxDMA();
 	/* Enable I2S Rx function */
-	DrvI2S_EnableRx ( );
-	DrvI2S_EnableTx ();
+	DrvI2S_EnableRx();
+	DrvI2S_EnableTx();
 	/* Enable I2S and configure its settings */
 	DrvI2S_EnableInt(I2S_RX_FIFO_THRESHOLD,I2S_Callback_Rx_Fifo);
+	DrvI2S_ClearRxFIFO();
+	DrvI2S_ClearTxFIFO();
 	
-	I2S->I2SCON.I2SEN = 1;
 }
 
 // Timer Interrupt Service Routine
 void TMR0_IRQHandler(void){
 	// GPA_13 = ~GPA_13;
 	//uint32_t u32data;
-	char display[3][16];
+	//char display[3][16];
 	//u32data = _DRVI2S_READ_RX_FIFO();
 	//u32data = _DRVI2S_READ_RX_FIFO_LEVEL();
 	//u32data = I2S->I2SRXFIFO;
@@ -175,23 +187,26 @@ int main (void) {
 	
 	I2S_Init(1,DRVI2S_DATABIT_8,DRVI2S_STEREO);
 	
-	//uint32_t u32clock;
-	//u32clock = DrvI2S_GetMCLKFreq ( ); /* Get I2S MCLK clock frequency */
-	//uint32_t u32sclock;
-	//u32sclock = DrvI2S_GetSourceClockFreq( ); /* Get I2S source clock frequency */
-	//uint32_t u32bclock;
-	//u32bclock = DrvI2S_GetBCLKFreq ( ); /* Get I2S BCLK clock frequency */
+	uint32_t u32clock;
+	u32clock = DrvI2S_GetMCLKFreq ( ); /* Get I2S MCLK clock frequency */
+	uint32_t u32sclock;
+	u32sclock = DrvI2S_GetSourceClockFreq( ); /* Get I2S source clock frequency */
+	uint32_t u32bclock;
+	u32bclock = DrvI2S_GetBCLKFreq ( ); /* Get I2S BCLK clock frequency */
 
-
-	//sprintf(display[0],"Clk: %d",u32clock);
-	//sprintf(display[1],"sClk: %d",u32sclock);
-	//sprintf(display[2],"bClk: %d",u32bclock);
-	//print_lcd(0,display[0]);
-	//print_lcd(1,display[1]);
-	//print_lcd(2,display[2]);
+	sprintf(display[0],"Clk: %d",u32clock);
+	sprintf(display[1],"sClk: %d",u32sclock);
+	sprintf(display[2],"bClk: %d",u32bclock);
+	print_lcd(0,display[0]);
+	print_lcd(1,display[1]);
+	print_lcd(2,display[2]);
 	
-
+	TXData = 0;
 	
+	for(int i = 0; i<10; i++)
+		DrvSYS_Delay(300000);
+		
+	I2S->I2SCON.I2SEN = 1;
 	
 	while(1){
 		//GPC_15 = GPA_8; // SDA

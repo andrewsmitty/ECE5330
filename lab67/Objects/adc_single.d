@@ -1,0 +1,12 @@
+.\objects\adc_single.o: adc_single.c
+.\objects\adc_single.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\adc_single.o: ../NUC1xx/NUC1xx.h
+.\objects\adc_single.o: ../CoreSupport/core_cm0.h
+.\objects\adc_single.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc_single.o: ../NUC1xx/system_NUC1xx.h
+.\objects\adc_single.o: ../Include/System\SysInfra.h
+.\objects\adc_single.o: ../Include/System\ModuleID.h
+.\objects\adc_single.o: ../Include/Driver/DrvSYS.h
+.\objects\adc_single.o: ../Include/Driver/DrvGPIO.h
+.\objects\adc_single.o: ../Include/NUC1xx-LB_002/LCD_Driver.h
+.\objects\adc_single.o: ../Include/Driver/DrvADC.h
